@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Resume Maker</h1>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <!-- Profile Picture Upload -->
+        <label for="profilePic">Upload Profile Picture:</label>
+        <input type="file" id="profilePic" accept="image/*" onchange="previewProfilePic()">
+        <img id="profilePreview" src="" alt="Profile Picture Preview" style="display:none; width:100px; border-radius:50%;">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" placeholder="Enter desired job title">
+
+        <label for="skills">Skills (comma-separated):</label>
+        <input type="text" id="skills" placeholder="e.g. JavaScript, HTML, CSS, Python">
+
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" rows="4" placeholder="Describe your work experience"></textarea>
+
+        <!-- AI-Powered Features -->
+        <button onclick="generateAIResume()">Generate Resume</button>
+        <button onclick="generateAICoverLetter()">Generate Cover Letter</button>
+        <button onclick="rateResume()">Rate Resume</button>
+
+        <!-- Download & Share Options -->
+        <button onclick="downloadResume()">Download Resume</button>
+        <button onclick="shareResume()">Share Resume</button>
+
+        <!-- Auto-Fill from LinkedIn & GitHub -->
+        <button onclick="fetchFromLinkedIn()">Fetch from LinkedIn</button>
+        <button onclick="fetchFromGitHub()">Fetch from GitHub</button>
+
+        <!-- Job Search Feature -->
+        <label for="jobSearch">Search Jobs Based on Skills:</label>
+        <input type="text" id="jobSearch" placeholder="Enter skills to find jobs">
+        <button onclick="searchJobs()">Find Jobs</button>
+        
+        <!-- Display Sections -->
+        <h2>Your AI-Generated Resume</h2>
+        <div id="resumeMaker"></div>
+
+        <h2>AI-Powered Cover Letter</h2>
+        <div id="coverLetterPreview"></div>
+
+        <h2>Resume Rating</h2>
+        <div id="resumeRating"></div>
+
+        <h2>Job Listings</h2>
+        <div id="jobResults"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

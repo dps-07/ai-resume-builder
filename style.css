@@ -1,0 +1,119 @@
+/* Resume Maker Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: yellow;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    background: lightgreen;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: orange;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#resumeMaker, #coverLetterPreview, #resumeRating, #jobResults {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background 0.3s;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#coverLetterPreview {
+    white-space: pre-wrap;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: yellow;
+}
+
+.dark-mode input, .dark-mode textarea {
+    background: blue;
+    color: deeppink;
+    border: 1px solid #777;
+}
+
+.dark-mode button {
+    background: #444;
+}
+
+.dark-mode button:hover {
+    background: #666;
+}
+
+.dark-mode #resumeMaker,
+.dark-mode #coverLetterPreview,
+.dark-mode #resumeRating,
+.dark-mode #jobResults {
+    background: #444;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+/* Profile Picture */
+#profilePreview {
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+
+
